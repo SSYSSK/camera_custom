@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EED9E362235EE19D00150936 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E361235EE19D00150936 /* AppDelegate.m */; };
+		EED9E365235EE19D00150936 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E364235EE19D00150936 /* ViewController.m */; };
+		EED9E368235EE19D00150936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED9E366235EE19D00150936 /* Main.storyboard */; };
+		EED9E36A235EE1A000150936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED9E369235EE1A000150936 /* Assets.xcassets */; };
+		EED9E36D235EE1A000150936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED9E36B235EE1A000150936 /* LaunchScreen.storyboard */; };
+		EED9E370235EE1A000150936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E36F235EE1A000150936 /* main.m */; };
+		EED9E37A235EE1A000150936 /* ________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E379235EE1A000150936 /* ________Tests.m */; };
+		EED9E385235EE1A000150936 /* ________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E384235EE1A000150936 /* ________UITests.m */; };
+		EED9E394235EE1C800150936 /* MKPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E392235EE1C700150936 /* MKPreviewView.m */; };
+		EED9E397235EE23700150936 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E396235EE23700150936 /* CameraController.m */; };
+		EED9E39A235EE54900150936 /* UICameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED9E399235EE54900150936 /* UICameraController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EED9E376235EE1A000150936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED9E355235EE19D00150936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED9E35C235EE19D00150936;
+			remoteInfo = "自定义相机的封装";
+		};
+		EED9E381235EE1A000150936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED9E355235EE19D00150936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED9E35C235EE19D00150936;
+			remoteInfo = "自定义相机的封装";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EED9E35D235EE19D00150936 /* 自定义相机的封装.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义相机的封装.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED9E360235EE19D00150936 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EED9E361235EE19D00150936 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EED9E363235EE19D00150936 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EED9E364235EE19D00150936 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EED9E367235EE19D00150936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED9E369235EE1A000150936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED9E36C235EE1A000150936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED9E36E235EE1A000150936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED9E36F235EE1A000150936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EED9E375235EE1A000150936 /* 自定义相机的封装Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义相机的封装Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED9E379235EE1A000150936 /* ________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________Tests.m"; sourceTree = "<group>"; };
+		EED9E37B235EE1A000150936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED9E380235EE1A000150936 /* 自定义相机的封装UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义相机的封装UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED9E384235EE1A000150936 /* ________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________UITests.m"; sourceTree = "<group>"; };
+		EED9E386235EE1A000150936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED9E392235EE1C700150936 /* MKPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPreviewView.m; sourceTree = "<group>"; };
+		EED9E393235EE1C700150936 /* MKPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPreviewView.h; sourceTree = "<group>"; };
+		EED9E395235EE23700150936 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		EED9E396235EE23700150936 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		EED9E398235EE54900150936 /* UICameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UICameraController.h; sourceTree = "<group>"; };
+		EED9E399235EE54900150936 /* UICameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICameraController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED9E35A235EE19D00150936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED9E372235EE1A000150936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED9E37D235EE1A000150936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EED9E354235EE19D00150936 = {
+			isa = PBXGroup;
+			children = (
+				EED9E35F235EE19D00150936 /* 自定义相机的封装 */,
+				EED9E378235EE1A000150936 /* 自定义相机的封装Tests */,
+				EED9E383235EE1A000150936 /* 自定义相机的封装UITests */,
+				EED9E35E235EE19D00150936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED9E35E235EE19D00150936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED9E35D235EE19D00150936 /* 自定义相机的封装.app */,
+				EED9E375235EE1A000150936 /* 自定义相机的封装Tests.xctest */,
+				EED9E380235EE1A000150936 /* 自定义相机的封装UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED9E35F235EE19D00150936 /* 自定义相机的封装 */ = {
+			isa = PBXGroup;
+			children = (
+				EED9E39B235EE6C400150936 /* Camera */,
+				EED9E360235EE19D00150936 /* AppDelegate.h */,
+				EED9E361235EE19D00150936 /* AppDelegate.m */,
+				EED9E363235EE19D00150936 /* ViewController.h */,
+				EED9E364235EE19D00150936 /* ViewController.m */,
+				EED9E366235EE19D00150936 /* Main.storyboard */,
+				EED9E369235EE1A000150936 /* Assets.xcassets */,
+				EED9E36B235EE1A000150936 /* LaunchScreen.storyboard */,
+				EED9E36E235EE1A000150936 /* Info.plist */,
+				EED9E36F235EE1A000150936 /* main.m */,
+			);
+			path = "自定义相机的封装";
+			sourceTree = "<group>";
+		};
+		EED9E378235EE1A000150936 /* 自定义相机的封装Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EED9E379235EE1A000150936 /* ________Tests.m */,
+				EED9E37B235EE1A000150936 /* Info.plist */,
+			);
+			path = "自定义相机的封装Tests";
+			sourceTree = "<group>";
+		};
+		EED9E383235EE1A000150936 /* 自定义相机的封装UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EED9E384235EE1A000150936 /* ________UITests.m */,
+				EED9E386235EE1A000150936 /* Info.plist */,
+			);
+			path = "自定义相机的封装UITests";
+			sourceTree = "<group>";
+		};
+		EED9E39B235EE6C400150936 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EED9E395235EE23700150936 /* CameraController.h */,
+				EED9E396235EE23700150936 /* CameraController.m */,
+				EED9E393235EE1C700150936 /* MKPreviewView.h */,
+				EED9E392235EE1C700150936 /* MKPreviewView.m */,
+				EED9E398235EE54900150936 /* UICameraController.h */,
+				EED9E399235EE54900150936 /* UICameraController.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED9E35C235EE19D00150936 /* 自定义相机的封装 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED9E389235EE1A000150936 /* Build configuration list for PBXNativeTarget "自定义相机的封装" */;
+			buildPhases = (
+				EED9E359235EE19D00150936 /* Sources */,
+				EED9E35A235EE19D00150936 /* Frameworks */,
+				EED9E35B235EE19D00150936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义相机的封装";
+			productName = "自定义相机的封装";
+			productReference = EED9E35D235EE19D00150936 /* 自定义相机的封装.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EED9E374235EE1A000150936 /* 自定义相机的封装Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED9E38C235EE1A000150936 /* Build configuration list for PBXNativeTarget "自定义相机的封装Tests" */;
+			buildPhases = (
+				EED9E371235EE1A000150936 /* Sources */,
+				EED9E372235EE1A000150936 /* Frameworks */,
+				EED9E373235EE1A000150936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED9E377235EE1A000150936 /* PBXTargetDependency */,
+			);
+			name = "自定义相机的封装Tests";
+			productName = "自定义相机的封装Tests";
+			productReference = EED9E375235EE1A000150936 /* 自定义相机的封装Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EED9E37F235EE1A000150936 /* 自定义相机的封装UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED9E38F235EE1A000150936 /* Build configuration list for PBXNativeTarget "自定义相机的封装UITests" */;
+			buildPhases = (
+				EED9E37C235EE1A000150936 /* Sources */,
+				EED9E37D235EE1A000150936 /* Frameworks */,
+				EED9E37E235EE1A000150936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EED9E382235EE1A000150936 /* PBXTargetDependency */,
+			);
+			name = "自定义相机的封装UITests";
+			productName = "自定义相机的封装UITests";
+			productReference = EED9E380235EE1A000150936 /* 自定义相机的封装UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED9E355235EE19D00150936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "柯木超";
+				TargetAttributes = {
+					EED9E35C235EE19D00150936 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					EED9E374235EE1A000150936 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EED9E35C235EE19D00150936;
+					};
+					EED9E37F235EE1A000150936 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EED9E35C235EE19D00150936;
+					};
+				};
+			};
+			buildConfigurationList = EED9E358235EE19D00150936 /* Build configuration list for PBXProject "自定义相机的封装" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EED9E354235EE19D00150936;
+			productRefGroup = EED9E35E235EE19D00150936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED9E35C235EE19D00150936 /* 自定义相机的封装 */,
+				EED9E374235EE1A000150936 /* 自定义相机的封装Tests */,
+				EED9E37F235EE1A000150936 /* 自定义相机的封装UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED9E35B235EE19D00150936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED9E36D235EE1A000150936 /* LaunchScreen.storyboard in Resources */,
+				EED9E36A235EE1A000150936 /* Assets.xcassets in Resources */,
+				EED9E368235EE19D00150936 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED9E373235EE1A000150936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED9E37E235EE1A000150936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED9E359235EE19D00150936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED9E397235EE23700150936 /* CameraController.m in Sources */,
+				EED9E39A235EE54900150936 /* UICameraController.m in Sources */,
+				EED9E365235EE19D00150936 /* ViewController.m in Sources */,
+				EED9E370235EE1A000150936 /* main.m in Sources */,
+				EED9E362235EE19D00150936 /* AppDelegate.m in Sources */,
+				EED9E394235EE1C800150936 /* MKPreviewView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED9E371235EE1A000150936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED9E37A235EE1A000150936 /* ________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED9E37C235EE1A000150936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED9E385235EE1A000150936 /* ________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EED9E377235EE1A000150936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED9E35C235EE19D00150936 /* 自定义相机的封装 */;
+			targetProxy = EED9E376235EE1A000150936 /* PBXContainerItemProxy */;
+		};
+		EED9E382235EE1A000150936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED9E35C235EE19D00150936 /* 自定义相机的封装 */;
+			targetProxy = EED9E381235EE1A000150936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EED9E366235EE19D00150936 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED9E367235EE19D00150936 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED9E36B235EE1A000150936 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED9E36C235EE1A000150936 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED9E387235EE1A000150936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EED9E388235EE1A000150936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED9E38A235EE1A000150936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TT86V896FE;
+				INFOPLIST_FILE = "自定义相机的封装/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ee.liuyi1224--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EED9E38B235EE1A000150936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TT86V896FE;
+				INFOPLIST_FILE = "自定义相机的封装/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ee.liuyi1224--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EED9E38D235EE1A000150936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "自定义相机的封装Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义相机的封装.app/自定义相机的封装";
+			};
+			name = Debug;
+		};
+		EED9E38E235EE1A000150936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "自定义相机的封装Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义相机的封装.app/自定义相机的封装";
+			};
+			name = Release;
+		};
+		EED9E390235EE1A000150936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "自定义相机的封装UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "自定义相机的封装";
+			};
+			name = Debug;
+		};
+		EED9E391235EE1A000150936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "自定义相机的封装UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-11.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "自定义相机的封装";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED9E358235EE19D00150936 /* Build configuration list for PBXProject "自定义相机的封装" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED9E387235EE1A000150936 /* Debug */,
+				EED9E388235EE1A000150936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED9E389235EE1A000150936 /* Build configuration list for PBXNativeTarget "自定义相机的封装" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED9E38A235EE1A000150936 /* Debug */,
+				EED9E38B235EE1A000150936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED9E38C235EE1A000150936 /* Build configuration list for PBXNativeTarget "自定义相机的封装Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED9E38D235EE1A000150936 /* Debug */,
+				EED9E38E235EE1A000150936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED9E38F235EE1A000150936 /* Build configuration list for PBXNativeTarget "自定义相机的封装UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED9E390235EE1A000150936 /* Debug */,
+				EED9E391235EE1A000150936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED9E355235EE19D00150936 /* Project object */;
+}
