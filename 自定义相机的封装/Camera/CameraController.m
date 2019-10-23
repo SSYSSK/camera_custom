@@ -15,7 +15,6 @@
 @property (assign, nonatomic) BOOL canSwitchCamera; // 能否切换摄像头
 @property (strong, nonatomic) AVCaptureDeviceInput *activeVideoInput;// 当前正在使用的摄像头的输入
 @property (strong, nonatomic) AVCaptureDevice *activeCamera;// 当前正在使用的摄像头的输入
-@property (strong, nonatomic) dispatch_queue_t videoQueue; //视频队列
 @property (strong, nonatomic) AVCaptureMovieFileOutput *movieOutput;
 
 @property (strong, nonatomic) AVCapturePhotoOutput *imageOutput;
@@ -78,9 +77,9 @@
         }
     }
     
-    self.videoQueue = dispatch_queue_create("cc.VideoQueue", NULL);
     //使用同步调用会损耗一定的时间，则用异步的方式处理
-    dispatch_async(self.videoQueue, ^{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
         [self.captureSession startRunning];
     });
 }
